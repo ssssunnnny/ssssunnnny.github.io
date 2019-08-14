@@ -84,7 +84,7 @@
 <h3 id="通用架构"><a href="#通用架构" class="headerlink" title="通用架构"></a>通用架构</h3><p>Artop架构包含了AUTOSAR工具实现所需要的基础建立模块。它包含了以下的实现：AUTOSAR发布的元模型和一系列相关的服务包括AUTOSAR XSD 兼容序列化、基于规则的验证、基于树和表单的视图和编辑，基于模板的目标代码、文档和报告生成等。</p>
 <p>ARTOP是基于Eclipse平台和经过验证的Eclipse技术如Eclipse建模框架。一般建模环境中的功能是由Eclipse Sphinx项目实现的，并不止局限于Artop平台。Eclipse平台是一个非常适合开发特定于领域的集成开发环境(IDE)的应用程序框架。</p>
 <h3 id="AUTOSAR工具层"><a href="#AUTOSAR工具层" class="headerlink" title="AUTOSAR工具层"></a>AUTOSAR工具层</h3><p>一个完整的基于Artop 的AUTOSAR工具被分为以下几层。关于这些层比较主要的方面是Artop更关注平台功能而不是最终用户的功能。终端用户功能是竞争的一部分，并非是Artop的范围。竞争层由工具供应商 商业化开发的专有插件组成。这一层的插件使Artop适应最终用户的需求，并补充了Artop的功能，以便工具供应商的产品满足最终用户的需求。在AUTOSAR工具的上下文中，最终用户是直接参与基于AUTOSAR的系统或ECU开发的工程师。</p>
-<p><img src="/2019/08/12/Artop/Artop%5Clayers.PNG" alt></p>
+<p><img src="/2019/08/12/Artop/layers.png" alt></p>
 <h3 id="Artop-组件"><a href="#Artop-组件" class="headerlink" title="Artop 组件"></a>Artop 组件</h3><ul>
 <li>元模型实现和序列化</li>
 <li>工作区管理</li>
@@ -96,7 +96,7 @@
 </ul>
 <h3 id="组织"><a href="#组织" class="headerlink" title="组织"></a>组织</h3><p>Artop用户组是一组AUTOSAR标准的授权用户，他们对符合AUTOSAR标准的工具很感兴趣。Artop用户组的目的是促进Artop的创建、发展、推广和支持，并培养一个由AUTOSAR成员和合作伙伴组成的活跃社区和一个互补产品的生态系统。</p>
 <p>Artop用户组有很多角色：</p>
-<p><img src="/2019/08/12/Artop/Artop%5Corganization.PNG" alt></p>
+<p><img src="/2019/08/12/Artop/organization.png" alt></p>
 <p>设计成员：对用户组的策略和总体设计具有重要影响</p>
 <p>贡献成员：可以对Artop做出贡献，并致力于Artop的技术内容。用户组将根据贡献成员提供和维护其贡献的需要，像贡献成员提供对项目基础设施的适当访问。</p>
 <p>采用者：采用者在接受适当的Artop软件许可的前提下，可以免费使用、修改和构建Artop的各方。为了对Artop做出贡献，必须成为用户组中的贡献成员。只要你在软件许可基础上下载了Artop你就成为了采用者。</p>
@@ -111,8 +111,8 @@
 </ul>
 <p>基于发布的AUTOSAR Material (ASLR)的Artop软件许可：ASLR主要用于Artop。它将用于Artop的所有不包含任何需要AUTOSAR开发许可证的AUTOSAR材料的部件。</p>
 <p>Artop准备开发软件许可证(ASLP)：在特殊情况下，部分Artop是基于AUTOSAR材料，需要AUTOSAR开发许可证，这些部分将根据ASLP条款获得许可。</p>
-<p><img src="/2019/08/12/Artop/Artop%5Cmember.PNG" alt></p>
-<h2 id="ARText-——autosar文本语言框架"><a href="#ARText-——autosar文本语言框架" class="headerlink" title="ARText ——autosar文本语言框架"></a>ARText ——autosar文本语言框架<img src="/2019/08/12/Artop/Artop%5Clogo.PNG" alt></h2><p>Artext是为AUTOSAR构建文本模型语言的框架。AUTOSAR标准涵盖了汽车软件体系结构的广泛范围和大量的细节。在处理标准的某些方面时，AUTOSAR标准的内在复杂性可能是压倒性的。特定于域的语言允许您根据特定的需求定制建模语言，从而生成更易于维护和理解的模型。</p>
+<p><img src="/2019/08/12/Artop/member.PNG" alt></p>
+<h2 id="ARText-——autosar文本语言框架"><a href="#ARText-——autosar文本语言框架" class="headerlink" title="ARText ——autosar文本语言框架"></a>ARText ——autosar文本语言框架<img src="/2019/08/12/Artop/logo.png" alt></h2><p>Artext是为AUTOSAR构建文本模型语言的框架。AUTOSAR标准涵盖了汽车软件体系结构的广泛范围和大量的细节。在处理标准的某些方面时，AUTOSAR标准的内在复杂性可能是压倒性的。特定于域的语言允许您根据特定的需求定制建模语言，从而生成更易于维护和理解的模型。</p>
 <p>文本语言是描述复杂系统的有效方法。结合领域特定语言的强大功能可以显著提高开发人员的工作效率。使用ARtext，您有机会为AUTOSAR创建自己的文本语言。Artext基于xtext，使用xtext可以很容易地位文本语言创建一个丰富地编辑环境。Artext扩展了xtext关于AUTOSAR域地特性，并在Artop中提供了编辑器的完整集成。这样可以同时受益于Artop和Xtext。</p>
 <h4 id="丰富的编辑经验"><a href="#丰富的编辑经验" class="headerlink" title="丰富的编辑经验"></a>丰富的编辑经验</h4><p>Artext编辑器提供了丰富的文本编辑环境，包括语法突出显示、代码完成、集成验证等等。</p>
 <h4 id="无缝集成到Artop"><a href="#无缝集成到Artop" class="headerlink" title="无缝集成到Artop"></a>无缝集成到Artop</h4><p>Artext语言无缝集成到Artop上，可以来连接到别的AUTOSAR资源，比如AUTOSAR XML，可以从ARtext引用 AUTOSAR XML中定义的实体，反之亦然</p>
