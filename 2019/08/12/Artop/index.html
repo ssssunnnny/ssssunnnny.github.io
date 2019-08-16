@@ -122,7 +122,60 @@
 <p>Artop准备开发软件许可证(ASLP)：在特殊情况下，部分Artop是基于AUTOSAR材料，需要AUTOSAR开发许可证，这些部分将根据ASLP条款获得许可。</p>
 <p><img src="/2019/08/12/Artop/member.PNG" alt></p>
 <h2 id="ARUnit"><a href="#ARUnit" class="headerlink" title="ARUnit"></a>ARUnit</h2><p>测试环境</p>
-<p>### </p>
+<h2 id="ARText-——autosar文本语言框架"><a href="#ARText-——autosar文本语言框架" class="headerlink" title="ARText ——autosar文本语言框架"></a>ARText ——autosar文本语言框架<img src="/2019/08/12/Artop/logo.png" alt></h2><p>Artext是为AUTOSAR构建文本模型语言的框架。AUTOSAR标准涵盖了汽车软件体系结构的广泛范围和大量的细节。在处理标准的某些方面时，AUTOSAR标准的内在复杂性可能是压倒性的。特定于域的语言允许您根据特定的需求定制建模语言，从而生成更易于维护和理解的模型。</p>
+<p>文本语言是描述复杂系统的有效方法。结合领域特定语言的强大功能可以显著提高开发人员的工作效率。使用ARtext，您有机会为AUTOSAR创建自己的文本语言。Artext基于xtext，使用xtext可以很容易地位文本语言创建一个丰富地编辑环境。Artext扩展了xtext关于AUTOSAR域地特性，并在Artop中提供了编辑器的完整集成。这样可以同时受益于Artop和Xtext。</p>
+<p><strong>丰富的编辑经验</strong></p>
+<p>Artext编辑器提供了丰富的文本编辑环境，包括语法突出显示、代码完成、集成验证等等。</p>
+<p><strong>无缝集成到Artop</strong></p>
+<p>Artext语言无缝集成到Artop上，可以来连接到别的AUTOSAR资源，比如AUTOSAR XML，可以从ARtext引用 AUTOSAR XML中定义的实体，反之亦然</p>
+<p><strong>Artext语法</strong></p>
+<p>目前已经有几种基于ARText的文本语言:</p>
+<p>软件组件语言:建模软件组件、内部行为、可运行项、组合、端口接口等等。</p>
+<p>计时语言:在AUTOSAR模型中定义您的计时需求。</p>
+<p>公式语言:完全支持在AUTOSAR模型中指定和计算公式。</p>
+<p>变量语言:支持AUTOSAR 4.0新的变量处理特性。</p>
+<h3 id="ARText-Software-Component-Language软件组件语言"><a href="#ARText-Software-Component-Language软件组件语言" class="headerlink" title="ARText-Software Component Language软件组件语言"></a>ARText-Software Component Language软件组件语言</h3><p>软件组件语言允许有效地对软件组件建模，该语言主要关注AUTOSAR软件组件描述模板。支持一下特性：</p>
+<ul>
+<li>组装连接器</li>
+<li>组成成分</li>
+<li>数据类型</li>
+<li>枚举</li>
+<li>内部行为</li>
+<li>端口接口</li>
+<li>RTE事件</li>
+<li>允许实体</li>
+<li>软件组件</li>
+</ul>
+<p>等</p>
+<h3 id="ARText-Timing-Language"><a href="#ARText-Timing-Language" class="headerlink" title="ARText - Timing Language"></a>ARText - Timing Language</h3><p>计时语言允许您为AUTOSAR系统建模计时约束，符合4.0的AUTOSAR标准。</p>
+<p>该语言主要关注AUTOSAR定时扩展，并支持以下特性：</p>
+<p>不同的时序扩展：SWC、VFB、系统和ECU</p>
+<ul>
+<li>VFB的时间事件</li>
+<li>内部行为定时事件</li>
+<li>Flexray循环开始计时事件</li>
+<li>执行顺序时间约束</li>
+<li>抵消时间约束</li>
+<li>延时时间约束</li>
+<li>触发时间约束</li>
+<li>同步时间约束</li>
+<li>等</li>
+</ul>
+<h3 id="ARText-ECU-Configuration"><a href="#ARText-ECU-Configuration" class="headerlink" title="ARText-ECU Configuration"></a>ARText-ECU Configuration</h3><p>ARText ECU配置语言允许您配置任意的ECU配置参数。它具有参数特定的代码完成功能，例如它显示了枚举参数的所有有效枚举文字。</p>
+<p>ECUC 配置文件必须从包声明开始，然后是可选的导入语句。以模块关键字开始，对模块定义的引用， 模块名称。</p>
+<blockquote>
+<p>ARText demo 里Help中有对ARText使用的详细介绍，之后补充</p>
+</blockquote>
+<h2 id="Artop-开发文档"><a href="#Artop-开发文档" class="headerlink" title="Artop 开发文档"></a>Artop 开发文档</h2><p>最新Artop发行版的Artop开发文档也可以在线获得Eclipse帮助格式。</p>
+<h3 id="AAL-Developer-Guide"><a href="#AAL-Developer-Guide" class="headerlink" title="AAL Developer Guide"></a>AAL Developer Guide</h3><h5 id="元模型-amp-XML-序列化"><a href="#元模型-amp-XML-序列化" class="headerlink" title="元模型 &amp; XML 序列化"></a>元模型 &amp; XML 序列化</h5><h2 id="Downloads"><a href="#Downloads" class="headerlink" title="Downloads"></a>Downloads</h2><h3 id="Artop-Technology-Demonstrator"><a href="#Artop-Technology-Demonstrator" class="headerlink" title="Artop Technology Demonstrator"></a>Artop Technology Demonstrator</h3><p> Artop演示程序的目的是演示底层AUTOSAR工具平台(Artop)的特性。演示程序是一个示例集合，展示了如何使用Artop为最终用户构建AUTOSAR开发工具。可以开始使用Artop SDK将自己的AUTOSAR开发工具开发为Artop插件。Artop SDK从Artop网站上单独下载。要开始使用Artop SDK，参考Artop Wiki中提供的Artop入门指南。</p>
+<p>在创建AUTOSAR PROJECT时可以选择Import ECUparamDef可以将ECU参数定义自动添加到项目中，也可以添加 Import Application Interfaces。</p>
+<p>AR Package</p>
+<p><strong>Eclipse Project Release Notes</strong></p>
+<p>主动开源OSI</p>
+<h3 id="Artop-SDK"><a href="#Artop-SDK" class="headerlink" title="Artop SDK"></a>Artop SDK</h3><p>Artop SDK包含了基于Artop生成自己的插件所依赖的所有插件。SDK同样包含了源代码和文档和例子，可以分开下载。</p>
+<h3 id="ARText-SDK"><a href="#ARText-SDK" class="headerlink" title="ARText SDK"></a>ARText SDK</h3><p>Artext SDK包含开发基于Artop的自己的AUTOSAR文本语言所需的所有ARText插件，以及当前的文本语言插件，SDK包含源代码和文档。</p>
+<p>##### </p>
+<h3 id><a href="#" class="headerlink" title=" "></a> </h3><p>### </p>
 
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
@@ -153,7 +206,7 @@
     </div>
     
         <div class='side'>
-            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Artop"><span class="toc-number">1.</span> <span class="toc-text">Artop</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Architecture架构"><span class="toc-number">1.1.</span> <span class="toc-text">Architecture架构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#通用架构"><span class="toc-number">1.2.</span> <span class="toc-text">通用架构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#结构分层"><span class="toc-number">1.3.</span> <span class="toc-text">结构分层</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#AUTOSAR工具层"><span class="toc-number">1.4.</span> <span class="toc-text">AUTOSAR工具层</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Artop-组件"><span class="toc-number">1.5.</span> <span class="toc-text">Artop 组件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#组织"><span class="toc-number">1.6.</span> <span class="toc-text">组织</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Artop软件许可"><span class="toc-number">1.7.</span> <span class="toc-text">Artop软件许可</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ARUnit"><span class="toc-number">2.</span> <span class="toc-text">ARUnit</span></a></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Artop"><span class="toc-number">1.</span> <span class="toc-text">Artop</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Architecture架构"><span class="toc-number">1.1.</span> <span class="toc-text">Architecture架构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#通用架构"><span class="toc-number">1.2.</span> <span class="toc-text">通用架构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#结构分层"><span class="toc-number">1.3.</span> <span class="toc-text">结构分层</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#AUTOSAR工具层"><span class="toc-number">1.4.</span> <span class="toc-text">AUTOSAR工具层</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Artop-组件"><span class="toc-number">1.5.</span> <span class="toc-text">Artop 组件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#组织"><span class="toc-number">1.6.</span> <span class="toc-text">组织</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Artop软件许可"><span class="toc-number">1.7.</span> <span class="toc-text">Artop软件许可</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ARUnit"><span class="toc-number">2.</span> <span class="toc-text">ARUnit</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ARText-——autosar文本语言框架"><span class="toc-number">3.</span> <span class="toc-text">ARText ——autosar文本语言框架</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#ARText-Software-Component-Language软件组件语言"><span class="toc-number">3.1.</span> <span class="toc-text">ARText-Software Component Language软件组件语言</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ARText-Timing-Language"><span class="toc-number">3.2.</span> <span class="toc-text">ARText - Timing Language</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ARText-ECU-Configuration"><span class="toc-number">3.3.</span> <span class="toc-text">ARText-ECU Configuration</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Artop-开发文档"><span class="toc-number">4.</span> <span class="toc-text">Artop 开发文档</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#AAL-Developer-Guide"><span class="toc-number">4.1.</span> <span class="toc-text">AAL Developer Guide</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#元模型-amp-XML-序列化"><span class="toc-number">4.1.0.1.</span> <span class="toc-text">元模型 &amp; XML 序列化</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Downloads"><span class="toc-number">5.</span> <span class="toc-text">Downloads</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Artop-Technology-Demonstrator"><span class="toc-number">5.1.</span> <span class="toc-text">Artop Technology Demonstrator</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Artop-SDK"><span class="toc-number">5.2.</span> <span class="toc-text">Artop SDK</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ARText-SDK"><span class="toc-number">5.3.</span> <span class="toc-text">ARText SDK</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-number">5.4.</span> <span class="toc-text"> </span></a></li></ol></li></ol>
         </div>
     
 </div>
